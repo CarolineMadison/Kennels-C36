@@ -1,0 +1,11 @@
+.map-image {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.card-cityName {
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+}
