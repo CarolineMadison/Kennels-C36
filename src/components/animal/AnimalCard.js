@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "./animal.css"
 
 class AnimalCard extends Component {
   render() {
