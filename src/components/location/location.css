@@ -1,11 +1,9 @@
-.map-image {
-    margin-left: 20px;
-    display: flex;
+.dogPark-image {
+    width: 25%;
+    height: auto;
     align-items: center;
-}
-
-.card-cityName {
+    margin-bottom: 10px;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
-    background-color: orange;
 }

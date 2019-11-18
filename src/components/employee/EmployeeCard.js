@@ -5,11 +5,10 @@ class EmployeeCard extends Component {
     return (
       <div className="card">
         <div className="card-content">
-          {/* <picture>
-            <img src={require('./dog.svg')} alt="My Dog" />
-          </picture> */}
-          <h3>Name: <span className="card-petname">Also Another Person</span></h3>
-          <p>Breed: Human</p>
+          <h3><span className="card-petname">Paddington Bear</span></h3>
+          <h3><span className="card-petname">Harry Potter</span></h3>
+          <h3><span className="card-petname">Lego Batman</span></h3>
+          <h3><span className="card-petname">Spiderman</span></h3>
         </div>
       </div>
     );
