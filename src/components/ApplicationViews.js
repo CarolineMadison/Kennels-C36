@@ -10,18 +10,27 @@ import OwnerCard from './owner/OwnerCard'
 
 class ApplicationViews extends Component {
 
-  render() {
-    return (
-      <React.Fragment>
-        <Route exact path="/" render={(props) => {
-          return <Home />
-        }} />
-        <Route path="/animals" render={(props) => {
-          return <AnimalCard />
-        }} />
-      </React.Fragment>
-    )
-  }
-}
-
+    render() {
+        return (
+            <React.Fragment>
+                <Route exact path="/" render={(props) => {
+                    return <Home />
+                }} />
+                <Route path="/animals" render={(props) => {
+                    return <AnimalCard />
+                }} />
+                <Route exact path="/locations" render={(props) => {
+                    return <LocationCard />
+                }} />
+                <Route exact path="/employees" render={(props) => {
+                    return <EmployeeCard />
+                }} />
+                <Route exact path="/owners" render={(props) => {
+                    return <OwnerCard />
+                }} />
+            </React.Fragment>
+              )
+            }
+          }
+          
 export default ApplicationViews
