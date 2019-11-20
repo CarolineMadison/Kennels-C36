@@ -1,17 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import '../animal/animal.css'
 
 class OwnerCard extends Component {
   render() {
+    // console.log(this.props)
     return (
       <div className="card">
         <div className="card-content">
-          {/* <picture>
-            <img src={require('./dog.svg')} alt="My Dog" />
-          </picture> */}
-          <h3><span className="card-petname">Carmen Sandiego</span></h3>
-          <h3><span className="card-petname">Ms. Cat Lady</span></h3>
-          <h3><span className="card-petname">Mr. Cat Man</span></h3>
-          <h3><span className="card-petname">Sandiego Carmen</span></h3>
+          <h3><b>{this.props.owner.name}</b></h3>
+          <img src={this.props.owner.photo} alt="Owner"/>
+          <button type="button" onClick={() => this.props.deleteOwner(this.props.owner.id)}>Get Outta Here</button>
         </div>
       </div>
     );

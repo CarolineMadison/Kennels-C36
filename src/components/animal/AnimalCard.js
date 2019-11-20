@@ -1,16 +1,15 @@
-import React, { Component } from 'react';
-import "./animal.css"
+import React, { Component } from 'react'
+import './animal.css'
 
 class AnimalCard extends Component {
   render() {
     return (
       <div className="card">
         <div className="card-content">
-          <picture>
-            <img src={require('./dog.svg')} alt="My Dog" />
-          </picture>
-          <h3>Name: <span className="card-petname">Doodles</span></h3>
-          <p>Breed: Poodle</p>
+          <h3>Name: <b>{this.props.animal.name}</b></h3>
+          <img src={this.props.animal.photo} alt="Dog"/>
+          <p>Breed: {this.props.animal.breed}</p>
+          <button type="button" onClick={() => this.props.deleteAnimal(this.props.animal.id)}>Discharge</button>
         </div>
       </div>
     );
@@ -18,3 +17,4 @@ class AnimalCard extends Component {
 }
 
 export default AnimalCard;
+

@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import '../animal/animal.css'
 
 class EmployeeCard extends Component {
   render() {
     return (
       <div className="card">
         <div className="card-content">
-          <h3><span className="card-petname">Paddington Bear</span></h3>
-          <h3><span className="card-petname">Harry Potter</span></h3>
-          <h3><span className="card-petname">Lego Batman</span></h3>
-          <h3><span className="card-petname">Spiderman</span></h3>
+          <h3><b>{this.props.employee.name}</b></h3>
+          <img src={this.props.employee.photo} alt="Employee"/>
+          <button type="button" onClick={() => this.props.deleteEmployee(this.props.employee.id)}>Fire</button>
         </div>
       </div>
     );
