@@ -1,76 +1,76 @@
 {
-    "animals": [
-        { 
-            "id": 1, 
-            "name": "Stinker", 
-            "breed": "Mixed Breed",
-            "photo": "https://images.pexels.com/photos/39317/chihuahua-dog-puppy-cute-39317.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-        },
-        { 
-            "id": 2, 
-            "name": "Charles", 
-            "breed": "Golden Retriever",
-            "photo": "https://media.gettyimages.com/photos/golden-retriever-puppy-portrait-picture-id512366437?s=612x612"
-        },
-        { 
-            "id": 3, 
-            "name": "Gregory", 
-            "breed": "Golden Lab", 
-            "photo": "https://www.dogster.com/wp-content/uploads/2018/10/golden-eating-toy.jpg"
-        }
-    ],
-    "locations": [
-        {
-        "id": 1,
-        "city": "Nashville",
-        "dogParkName": "Fetch Park",
-        "photo": "http://nashvilleguru.com/officialwebsite/wp-content/uploads/2019/01/Fetch-Park-Nashville-1024x780.jpg"
-        },
-        {
-        "id": 2,
-        "city": "Seattle",
-        "dogParkName": "Dogwood Play Park and Bar",
-        "photo": "https://static.wixstatic.com/media/037af7_e99e39f732784850a2e89cf689006a4b~mv2_d_4032_3024_s_4_2.jpg/v1/crop/x_47,y_0,w_3937,h_3024/fill/w_415,h_314,al_c,q_80,usm_0.66_1.00_0.01/IMG_0373%202.webp"
-        },
-        {
-        "id": 3,
-        "city": "Missoula",
-        "dogParkName": "Jacobs Island Bark Park",
-        "photo": "https://photos.bringfido.com/photo/2016/02/02/jacobs_island_park.jpg?size=stack&density=2x"
-        }
-    ],
-    "employees": [
-        {
-        "id": 1,
-        "name": "Snoop Dog",
-        "photo": "https://images1.miaminewtimes.com/imager/u/745xauto/10954826/snoop_dogg_credit_uncle_snoops_army_1200.jpg"
-        },
-        {
-        "id": 2,
-        "name": "Ms. Frizzle",
-        "photo": "https://cdn.theatlantic.com/assets/media/img/upload/wire/2014/06/11/Screen_Shot_2014_06_11_at_11.24.39_AM/lead_720_405.png?mod=1533691674"
-        },
-        {
-        "id": 3,
-        "name": "Mr. T",
-        "photo": "https://vignette.wikia.nocookie.net/rocky/images/d/dc/MrT.jpg/revision/latest?cb=20121204171820"
-        }
-    ],
-    "owners": [
-        {
-        "id": 1,
-        "name": "Big Bird",
-        "photo": "https://cdn.vox-cdn.com/thumbor/2l61CU-4h7GjP6oQbSVKDWMUO98=/0x94:1494x1090/1200x800/filters:focal(0x94:1494x1090)/cdn.vox-cdn.com/uploads/chorus_image/image/45686844/big_bird_half.0.0.jpg"
-        },
-        {
-        "id": 2,
-        "name": "Elmo",
-        "photo": "https://upload.wikimedia.org/wikipedia/en/7/74/Elmo_from_Sesame_Street.gif"
-        },
-        {
-        "id": 3,
-        "name": "Oscar the Grouch",
-        "photo": "https://miro.medium.com/max/1000/0*XUqoVTLGQsYacXs_"
-        }
-    ]
+  "animals": [
+    {
+      "id": 1,
+      "name": "Stinker",
+      "breed": "Mixed Breed",
+      "photo": "https://images.pexels.com/photos/39317/chihuahua-dog-puppy-cute-39317.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    },
+    {
+      "id": 2,
+      "name": "Charles",
+      "breed": "Golden Retriever",
+      "photo": "https://media.gettyimages.com/photos/golden-retriever-puppy-portrait-picture-id512366437?s=612x612"
+    },
+    {
+      "id": 3,
+      "name": "Gregory",
+      "breed": "Golden Lab",
+      "photo": "https://www.dogster.com/wp-content/uploads/2018/10/golden-eating-toy.jpg"
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "city": "Nashville",
+      "dogParkName": "Fetch Park",
+      "photo": "http://nashvilleguru.com/officialwebsite/wp-content/uploads/2019/01/Fetch-Park-Nashville-1024x780.jpg"
+    },
+    {
+      "id": 2,
+      "city": "Seattle",
+      "dogParkName": "Dogwood Play Park and Bar",
+      "photo": "https://static.wixstatic.com/media/037af7_e99e39f732784850a2e89cf689006a4b~mv2_d_4032_3024_s_4_2.jpg/v1/crop/x_47,y_0,w_3937,h_3024/fill/w_415,h_314,al_c,q_80,usm_0.66_1.00_0.01/IMG_0373%202.webp"
+    },
+    {
+      "id": 3,
+      "city": "Missoula",
+      "dogParkName": "Jacobs Island Bark Park",
+      "photo": "https://photos.bringfido.com/photo/2016/02/02/jacobs_island_park.jpg?size=stack&density=2x"
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Snoop Dog",
+      "photo": "https://images1.miaminewtimes.com/imager/u/745xauto/10954826/snoop_dogg_credit_uncle_snoops_army_1200.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Ms. Frizzle",
+      "photo": "https://cdn.theatlantic.com/assets/media/img/upload/wire/2014/06/11/Screen_Shot_2014_06_11_at_11.24.39_AM/lead_720_405.png?mod=1533691674"
+    },
+    {
+      "id": 3,
+      "name": "Mr. T",
+      "photo": "https://vignette.wikia.nocookie.net/rocky/images/d/dc/MrT.jpg/revision/latest?cb=20121204171820"
+    }
+  ],
+  "owners": [
+    {
+      "id": 1,
+      "name": "Big Bird",
+      "photo": "https://cdn.vox-cdn.com/thumbor/2l61CU-4h7GjP6oQbSVKDWMUO98=/0x94:1494x1090/1200x800/filters:focal(0x94:1494x1090)/cdn.vox-cdn.com/uploads/chorus_image/image/45686844/big_bird_half.0.0.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Elmo",
+      "photo": "https://upload.wikimedia.org/wikipedia/en/7/74/Elmo_from_Sesame_Street.gif"
+    },
+    {
+      "id": 3,
+      "name": "Oscar the Grouch",
+      "photo": "https://miro.medium.com/max/1000/0*XUqoVTLGQsYacXs_"
+    }
+  ]
 }

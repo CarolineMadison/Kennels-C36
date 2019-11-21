@@ -7,6 +7,7 @@ import EmployeeList from './employee/EmployeeList'
 import OwnerList from './owner/OwnerList'
 import AnimalDetail from './animal/AnimalDetail'
 import LocationDetail from './location/LocationDetail'
+import AnimalForm from './animal/AnimalForm'
 
 class ApplicationViews extends Component {
 
@@ -15,24 +16,27 @@ class ApplicationViews extends Component {
             <React.Fragment>
                 <Route exact path="/" render={(props) => {
                     return <Home />
-                }} />
+                }} /> 
                 <Route exact path="/animals" render={(props) => {
-                    return <AnimalList />
+                    return <AnimalList {...props}/>
                 }} />
-                <Route path="/animals/:animalId(\d+)" render={(props) => {
+                <Route exact path="/animals/:animalId(\d+)" render={(props) => {
                     // passed from react-router-dom to animal detail component
                     // kind of the same as EVENT.target.value (Vanilla javaScript)
                     console.log("Props from react-router-dom", props)
                     console.log("This component's props", this.props)
                     // Pass the animalId to the AnimalDetailComponent
-                    return <AnimalDetail 
-                    animalId={parseInt(props.match.params.animalId)}
-                    // history={props.history}
-                    // match={props.match}
-                    // location={props.location}
-                    // above is the same as key value pairs on props (below) from react-router-dom and passes it as props to animal detail
-                    {...props}
+                    return <AnimalDetail
+                        animalId={parseInt(props.match.params.animalId)}
+                        // history={props.history}
+                        // match={props.match}
+                        // location={props.location}
+                        // above is the same as key value pairs on props (below) from react-router-dom and passes it as props to animal detail
+                        {...props}
                     />
+                }} />
+                <Route path="/animals/new" render={(props) => {
+                    return <AnimalForm {...props} />
                 }} />
                 <Route exact path="/locations" render={(props) => {
                     return <LocationList />
@@ -40,7 +44,7 @@ class ApplicationViews extends Component {
                 <Route path="/locations/:locationId(\d+)" render={(props) => {
                     // Pass the animalId to the AnimalDetailComponent
                     return <LocationDetail locationId={parseInt(props.match.params.locationId)}
-                    {...props} 
+                        {...props}
                     />
                 }} />
                 <Route exact path="/employees" render={(props) => {
