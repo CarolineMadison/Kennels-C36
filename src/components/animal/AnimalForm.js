@@ -6,7 +6,7 @@ import 'firebase/storage';
 
 class AnimalForm extends Component {
     state = {
-        animalName: "",
+        name: "",
         breed: "",
         photo: null,
         loadingStatus: false,
@@ -17,30 +17,10 @@ class AnimalForm extends Component {
         stateToChange[evt.target.id] = evt.target.value;
         this.setState(stateToChange);
     };
-
-    /*  Local method for validation, set loadingStatus, create animal      object, invoke the AnimalManager post method, and redirect to the full animal list
-    */
+  
     constructNewAnimal = evt => {
         evt.preventDefault();
-        if (this.state.animalName === "" || this.state.breed === "") {
-            window.alert("Please input an animal name and breed");
-        } else {
-            this.setState({ loadingStatus: true });
-            const animal = {
-                name: this.state.animalName,
-                breed: this.state.breed,
-                photo: this.state.photo
-            };
-
-            // Create the ani mal and redirect user to animal list
-            AnimalManager.post(animal)
-                .then(() => this.props.history.push("/animals"));
-        }
-    };
-
-    constructNewAnimal = evt => {
-        evt.preventDefault();
-        if (this.state.animalName === "" || this.state.breed === "") {
+        if (this.state.name === "" || this.state.breed === "") {
             window.alert("Please input an animal name and breed");
         } else {
             this.setState({ loadingStatus: true });
@@ -53,9 +33,8 @@ class AnimalForm extends Component {
                 // step 3: save everything to json server
                 .then(url => {
                     const newAnimal = {
-                        animalName: "",
-                        breed: "",
-                        photo: "",
+                        name: this.state.name,
+                        breed: this.state.breed,
                         photo: url
                     }
                     return AnimalManager.post(newAnimal)
@@ -75,10 +54,10 @@ class AnimalForm extends Component {
                                 type="text"
                                 required
                                 onChange={this.handleFieldChange}
-                                id="animalName"
+                                id="name"
                                 placeholder="Animal name"
                             />
-                            <label htmlFor="animalName">Name</label>
+                            <label htmlFor="name">Name</label>
                             <input
                                 type="text"
                                 required

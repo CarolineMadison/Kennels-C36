@@ -17,6 +17,12 @@
       "name": "Gregory",
       "breed": "Golden Lab",
       "photo": "https://www.dogster.com/wp-content/uploads/2018/10/golden-eating-toy.jpg"
+    },
+    {
+      "name": "Charlie",
+      "breed": "Great Dane",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/kennel-nss-c36-practice.appspot.com/o/images%2FCharlie-1574363994250?alt=media&token=47989d50-e4d6-4b64-a102-294c8211e0ca",
+      "id": 4
     }
   ],
   "locations": [
