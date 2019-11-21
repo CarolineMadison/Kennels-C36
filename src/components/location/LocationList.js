@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-//import the components we will need
 import LocationCard from './LocationCard'
 import LocationManager from '../../modules/LocationManager'
 
@@ -10,8 +9,7 @@ class LocationList extends Component {
     }
 
     componentDidMount() {
-        console.log("Location LIST: ComponentDidMount");
-        //getAll from LocationManager and hang on to that data; put it in state
+        //getAllLocations from LocationManager and hang on to that data; put it in state
         LocationManager.getAllLocations()
             .then((locations) => {
                 this.setState({
