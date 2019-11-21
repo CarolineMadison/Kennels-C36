@@ -43,6 +43,12 @@
       "city": "Missoula",
       "dogParkName": "Jacobs Island Bark Park",
       "photo": "https://photos.bringfido.com/photo/2016/02/02/jacobs_island_park.jpg?size=stack&density=2x"
+    },
+    {
+      "city": "New York City",
+      "dogParkName": "New York Dog Park",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/kennel-nss-c36-practice.appspot.com/o/images%2Fundefined-1574366018515?alt=media&token=b0243e8c-94c2-4d50-8ace-c6a4bf4aefa9",
+      "id": 4
     }
   ],
   "employees": [
@@ -60,6 +66,11 @@
       "id": 3,
       "name": "Mr. T",
       "photo": "https://vignette.wikia.nocookie.net/rocky/images/d/dc/MrT.jpg/revision/latest?cb=20121204171820"
+    },
+    {
+      "name": "Joseph",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/kennel-nss-c36-practice.appspot.com/o/images%2FJoseph-1574366911555?alt=media&token=1118fb2e-e650-4288-843f-ddc2ba225b97",
+      "id": 5
     }
   ],
   "owners": [
@@ -77,6 +88,11 @@
       "id": 3,
       "name": "Oscar the Grouch",
       "photo": "https://miro.medium.com/max/1000/0*XUqoVTLGQsYacXs_"
+    },
+    {
+      "name": "Betty White",
+      "photo": "https://firebasestorage.googleapis.com/v0/b/kennel-nss-c36-practice.appspot.com/o/images%2FBetty%20White-1574366873853?alt=media&token=02eefe1f-8406-4334-b0ca-b11ae23456c5",
+      "id": 4
     }
   ]
 }
