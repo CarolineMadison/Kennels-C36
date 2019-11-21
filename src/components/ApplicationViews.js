@@ -1,4 +1,5 @@
-import { Route } from 'react-router-dom'
+// import { Route } from 'react-router-dom'
+import { Route, withRouter, Redirect } from "react-router-dom"
 import React, { Component } from 'react'
 import Home from './home/Home'
 import AnimalList from './animal/AnimalList'
@@ -11,6 +12,7 @@ import AnimalForm from './animal/AnimalForm'
 import EmployeeForm from './employee/EmployeeForm'
 import LocationForm from './location/LocationForm'
 import OwnerForm from './owner/OwnerForm'
+// import Login from './auth/Login'
 
 class ApplicationViews extends Component {
 

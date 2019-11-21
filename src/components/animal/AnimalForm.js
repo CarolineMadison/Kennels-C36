@@ -14,6 +14,7 @@ class AnimalForm extends Component {
 
     handleFieldChange = evt => {
         const stateToChange = {};
+        // below is the same as stateToChange.name
         stateToChange[evt.target.id] = evt.target.value;
         this.setState(stateToChange);
     };
