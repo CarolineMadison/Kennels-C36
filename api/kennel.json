@@ -2,18 +2,21 @@
   "animals": [
     {
       "id": 1,
+      "employeeId": 1,
       "name": "Stinker",
       "breed": "Mixed Breed",
       "photo": "https://images.pexels.com/photos/39317/chihuahua-dog-puppy-cute-39317.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     },
     {
       "id": 2,
+      "employeeId": 2,
       "name": "Charles",
       "breed": "Golden Retriever",
       "photo": "https://media.gettyimages.com/photos/golden-retriever-puppy-portrait-picture-id512366437?s=612x612"
     },
     {
       "id": 3,
+      "employeeId": 3,
       "name": "Gregory",
       "breed": "Golden Lab",
       "photo": "https://www.dogster.com/wp-content/uploads/2018/10/golden-eating-toy.jpg"
