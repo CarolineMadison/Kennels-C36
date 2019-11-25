@@ -1,8 +1,11 @@
+// This component will accept props and return the employee name and then map over the animals returning <AnimalCard> for only the pets the employee is responsible for.
+
 import React, { Component } from 'react'
 import EmployeeManager from '../../modules/EmployeeManager'
 import AnimalCard from '../animal/AnimalCard'
 
 class EmployeeWithAnimals extends Component {
+    // set the state of employee object for one employee and the animals array to include animals with matching employeeId for that employee
     state = {
       employee: {},
       animals: []
@@ -23,6 +26,7 @@ class EmployeeWithAnimals extends Component {
         return (
           <div className="card">
             <p>Employee: {this.state.employee.name}</p>
+            {/* gets animals associated with the employee and renders a card for each one, passes props */}
             {this.state.animals.map(animal =>
               <AnimalCard
                 key={animal.id}
