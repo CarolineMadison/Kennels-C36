@@ -39,8 +39,8 @@ class AnimalForm extends Component {
                         photo: url
                     }
                     return AnimalManager.post(newAnimal)
+                    .then(() => this.props.history.push('/animals'));
                 })
-                .then(() => this.props.history.push('/animals'));
         }
     }
 

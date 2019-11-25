@@ -50,6 +50,7 @@ class AnimalList extends Component {
               key={animal.id}
               animal={animal}
               deleteAnimal={this.deleteAnimal}
+              {...this.props}
             />
           )}
         </div>
