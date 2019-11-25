@@ -57,7 +57,7 @@ class AnimalEditForm extends Component {
         <form>
           <fieldset>
             <div className="formgrid">
-              <label htmlFor="animalName">Name: </label>
+              <label htmlFor="name">Name: </label>
               <input
                 type="text"
                 required
