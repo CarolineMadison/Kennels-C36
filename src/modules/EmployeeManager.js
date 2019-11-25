@@ -9,17 +9,22 @@ export default {
   },
   deleteEmployee(id) {
     return fetch(`${remoteURL}/employees/${id}`, {
-        method: "DELETE"
+      method: "DELETE"
     })
-    .then(result => result.json())
+      .then(result => result.json())
   },
   post(newEmployee) {
     return fetch(`${remoteURL}/employees`, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(newEmployee)
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(newEmployee)
     }).then(data => data.json())
+  },
+  getWithAnimals(id) {
+    return fetch(`${remoteURL}/employees/${id}?_embed=animals`)
+      .then(result => result.json())
   }
 }
+

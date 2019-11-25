@@ -8,6 +8,7 @@ class AnimalEditForm extends Component {
       name: "",
       breed: "",
       photo: null,
+      employeeId: "",
       loadingStatus: true,
     };
 
@@ -30,7 +31,7 @@ class AnimalEditForm extends Component {
       AnimalManager.update(editedAnimal)
       .then(() => this.props.history.push("/animals"))
     }
-
+    // the form renders but you want to prepopulate the input fields with the animal editing...gotes to get the single animal
     componentDidMount() {
       AnimalManager.get(this.props.match.params.animalId)
       .then(animal => {
@@ -59,6 +60,7 @@ class AnimalEditForm extends Component {
               />
               <label htmlFor="animalName">Animal name</label>
 
+            </div>
               <input
                 type="text"
                 required
@@ -68,7 +70,6 @@ class AnimalEditForm extends Component {
                 value={this.state.breed}
               />
               <label htmlFor="breed">Breed</label>
-            </div>
             <div className="alignRight">
               <button
                 type="button" disabled={this.state.loadingStatus}

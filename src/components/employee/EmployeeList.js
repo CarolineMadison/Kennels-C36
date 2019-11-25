@@ -33,6 +33,7 @@ class EmployeeList extends Component {
   }
 
   render() {
+    console.log(this.state)
     return (
       <>
         <section className="section-content">
@@ -48,6 +49,8 @@ class EmployeeList extends Component {
               key={employee.id}
               employee={employee}
               deleteEmployee={this.deleteEmployee}
+              // need to pass props here because you need to get the history, match, and location
+              {...this.props}
             />
           )}
         </div>
