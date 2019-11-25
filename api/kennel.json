@@ -9,17 +9,17 @@
     },
     {
       "id": 2,
-      "employeeId": 2,
       "name": "George",
       "photo": "https://media.gettyimages.com/photos/golden-retriever-puppy-portrait-picture-id512366437?s=612x612",
-      "breed": "A dog"
+      "breed": "A dog",
+      "employeeId": 3
     },
     {
       "id": 4,
-      "employeeId": 3,
       "name": "Charles",
       "photo": "https://firebasestorage.googleapis.com/v0/b/kennel-nss-c36-practice.appspot.com/o/images%2FCharlie-1574363994250?alt=media&token=47989d50-e4d6-4b64-a102-294c8211e0ca",
-      "breed": "Great Dane"
+      "breed": "Great Dane",
+      "employeeId": 5
     },
     {
       "id": 5,

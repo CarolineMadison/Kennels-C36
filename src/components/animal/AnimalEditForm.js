@@ -11,6 +11,7 @@ class AnimalEditForm extends Component {
     photo: null,
     employeeId: "",
     loadingStatus: true,
+    employees: []
   };
 
   handleFieldChange = evt => {
@@ -44,8 +45,8 @@ class AnimalEditForm extends Component {
           employeeId: animal.employeeId,
           loadingStatus: false,
         });
-      });
-      EmployeeManager.getAll()
+      });     
+      EmployeeManager.getAllEmployees()
       .then(employees => this.setState({employees: employees}))
   }
 
@@ -56,6 +57,7 @@ class AnimalEditForm extends Component {
         <form>
           <fieldset>
             <div className="formgrid">
+              <label htmlFor="animalName">Name: </label>
               <input
                 type="text"
                 required
@@ -64,9 +66,9 @@ class AnimalEditForm extends Component {
                 id="name"
                 value={this.state.name}
               />
-              <label htmlFor="animalName">Animal name</label>
 
             </div>
+            <label htmlFor="breed">Breed: </label>
             <input
               type="text"
               required
@@ -75,7 +77,6 @@ class AnimalEditForm extends Component {
               id="breed"
               value={this.state.breed}
             />
-            <label htmlFor="breed">Breed</label>
             <select
               className="form-control"
               id="employeeId"
