@@ -16,10 +16,10 @@
     },
     {
       "id": 4,
-      "employeeId": 3,
       "name": "Charles",
       "photo": "https://firebasestorage.googleapis.com/v0/b/kennel-nss-c36-practice.appspot.com/o/images%2FCharlie-1574363994250?alt=media&token=47989d50-e4d6-4b64-a102-294c8211e0ca",
-      "breed": "Great Dane"
+      "breed": "Great Dane",
+      "employeeId": 5
     },
     {
       "id": 5,
@@ -58,21 +58,25 @@
   "employees": [
     {
       "id": 1,
+      "locationId": 2,
       "name": "Snoop Dog",
       "photo": "https://images1.miaminewtimes.com/imager/u/745xauto/10954826/snoop_dogg_credit_uncle_snoops_army_1200.jpg"
     },
     {
       "id": 2,
+      "locationId": 1,
       "name": "Ms. Frizzle",
       "photo": "https://cdn.theatlantic.com/assets/media/img/upload/wire/2014/06/11/Screen_Shot_2014_06_11_at_11.24.39_AM/lead_720_405.png?mod=1533691674"
     },
     {
       "id": 3,
+      "locationId": 3,
       "name": "Mr. T",
       "photo": "https://vignette.wikia.nocookie.net/rocky/images/d/dc/MrT.jpg/revision/latest?cb=20121204171820"
     },
     {
       "name": "Joseph",
+      "locationId": 1,
       "photo": "https://firebasestorage.googleapis.com/v0/b/kennel-nss-c36-practice.appspot.com/o/images%2FJoseph-1574366911555?alt=media&token=1118fb2e-e650-4288-843f-ddc2ba225b97",
       "id": 5
     }
