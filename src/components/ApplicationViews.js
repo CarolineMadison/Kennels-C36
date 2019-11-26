@@ -21,12 +21,12 @@ class ApplicationViews extends Component {
     render() {
         return (
             <React.Fragment>
-
+                {/* pass the `setUser` function to Login component */}
                 <Route path="/login" render={(props) => {
                     return <Login setUser={this.props.setUser} {...props} />
                 }} />
-
                 <Route exact path="/animals" render={props => {
+                    {/* check for the user */}
                     if (this.props.user) {
                         return <AnimalList {...props} />
                     } else {
@@ -37,8 +37,8 @@ class ApplicationViews extends Component {
                     // if (this.props.user) {
                         return <Home {...props} />
                     // } else {
-                    //     return <Redirect to="/login" />
-                    // }
+                    //[     return <Redirect to="/login" />
+                    // }]
                 }} />
                 <Route exact path="/animals/:animalId(\d+)" render={(props) => {
                     // passed from react-router-dom to animal detail component

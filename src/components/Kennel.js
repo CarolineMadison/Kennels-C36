@@ -24,7 +24,9 @@ class Kennel extends Component {
       JSON.stringify(authObj)
     )
     this.setState({
-      user: this.isAuthenticated()
+    
+        user: this.isAuthenticated()
+      
     });
   }
 
@@ -34,6 +36,14 @@ class Kennel extends Component {
   }
 
   componenetDidMount() {
+
+    this.setState({
+      user: this.isAuthenticated()
+    })
+
+  }
+
+  componentWillMount() {
     this.setState({
       user: this.isAuthenticated()
     })
