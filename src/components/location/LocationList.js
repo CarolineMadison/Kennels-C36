@@ -48,6 +48,8 @@ class LocationList extends Component {
               key={location.id}
               location={location}
               deleteLocation={this.deleteLocation}
+              // need to pass props so that the details button on location card will render employee information
+              // {...this.props}
             />
           )}
         </div>
