@@ -56,7 +56,7 @@ class Kennel extends Component {
         {/* Want NavBar and App Views to be dependent on logged in user */}
 
         {/* value of user in state is passed as props to the NavBar  */}
-        <NavBar user={this.state.user}/>
+        <NavBar user={this.state.user} clearUser={this.clearUser} />
         {/* gets the value as well as the set user method which it passes onto the login component */}
         <ApplicationViews user={this.state.user} setUser={this.setUser} />
       </>
