@@ -23,10 +23,10 @@
     },
     {
       "id": 5,
-      "employeeId": 3,
       "name": "Sam",
       "photo": "https://firebasestorage.googleapis.com/v0/b/kennel-nss-c36-practice.appspot.com/o/images%2FRory-1574693982338?alt=media&token=fc0f5c86-7532-4cc3-80a5-d61d1d9acf8a",
-      "breed": "Crossbreed"
+      "breed": "Crossbreed",
+      "employeeId": 5
     }
   ],
   "locations": [

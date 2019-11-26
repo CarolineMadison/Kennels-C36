@@ -46,10 +46,10 @@ class LocationList extends Component {
           {this.state.locations.map(location =>
             <LocationCard
               key={location.id}
-              location={location}
+              oneLocation={location}
               deleteLocation={this.deleteLocation}
               // need to pass props so that the details button on location card will render employee information
-              // {...this.props}
+              {...this.props}
             />
           )}
         </div>
